@@ -6,6 +6,5 @@ All this was done using an Arduino, stepmotor, hair clipper and an IRsensor.
 
 Here are some pictures of the Hair Clipper
 
-![Picture of Hair Clipper](file:///Users/josefjakobsson/Documents/Arduino/HairClipperArduino/IMG_2271.jpeg)
-
-![Picture of Hair Clipper](file:///Users/josefjakobsson/Documents/Arduino/HairClipperArduino/IMG_2270.jpeg)
+![IMG_2270](https://user-images.githubusercontent.com/57298459/204913405-841af052-eecf-4ee5-ab5c-6cc17d081bce.jpeg)
+![IMG_2271](https://user-images.githubusercontent.com/57298459/204913422-efe65a58-7eba-44ed-b909-b89a27ad9a13.jpeg)
