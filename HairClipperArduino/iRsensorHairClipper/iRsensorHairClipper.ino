@@ -17,9 +17,6 @@ int cnt = 29;
 Stepper myStepper(stepsRev, 8,10,9,11);
 void setup() {
   
-//pinMode(speedPin, OUTPUT);
-//pinMode(dirPin1, OUTPUT);
-//pinMode(dirPin2, OUTPUT);
 Serial.begin(9600);
 myStepper.setSpeed(motSpeed);
 
@@ -34,15 +31,11 @@ Serial.print(distance);
 Serial.println("cm");
 
 if (distance > MAX || distance < MIN){
-  //digitalWrite(dirPin1, LOW);
-  //digitalWrite(dirPin2, LOW);
   Serial.print("Distance: MAX OR LOW");
   Serial.print(distance);
   Serial.print("COUNT =");
   Serial.print(cnt);
 }else if (cnt == distance){
-  //digitalWrite(dirPin1, LOW);
-  //digitalWrite(dirPin2, LOW);
   Serial.print("Distance: PAUSE");
   Serial.print(distance);
 }else if (cnt < distance){
@@ -57,9 +50,6 @@ if (distance > MAX || distance < MIN){
 }
 
 void motorUp(){
-  //digitalWrite(dirPin1, LOW);
-  //digitalWrite(dirPin2, HIGH);
-  //analogWrite(speedPin, mSpeed);
   myStepper.step(20);
   cnt = cnt + 1;
   Serial.print("UP!!!");
@@ -67,9 +57,6 @@ void motorUp(){
 }
 
 void motorDown(){
-    //digitalWrite(dirPin1, HIGH);
-    //digitalWrite(dirPin2, LOW);
-    //analogWrite(speedPin, mSpeed);
     myStepper.step(-20);
     cnt = cnt - 1;
     Serial.print("DOWN!!");
